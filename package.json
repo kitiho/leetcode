@@ -1,30 +1,36 @@
 {
-  "dependencies": {
-    "md-img-convertor": "^0.0.5"
-  },
   "name": "leetcode",
-  "description": "leetcode notes",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {
-    "@types/glob": "^8.0.0",
-    "@types/node": "^18.7.18",
-    "esno": "^0.16.3",
-    "glob": "^8.0.3",
-    "typescript": "^4.8.3"
-  },
-  "scripts": {
-    "cv": "esno scripts/convert.ts"
-  },
+  "description": "leetcode notes",
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/kitiho/leetcode#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kitiho/leetcode.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/kitiho/leetcode/issues"
   },
-  "homepage": "https://github.com/kitiho/leetcode#readme"
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "cv": "esno scripts/convert.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "md-img-convertor": "^0.0.5"
+  },
+  "devDependencies": {
+    "@kitiho/eslint-config": "^0.1.2",
+    "@types/glob": "^8.0.0",
+    "@types/node": "^18.7.18",
+    "eslint": "^8.23.1",
+    "esno": "^0.16.3",
+    "glob": "^8.0.3",
+    "husky": "^8.0.0",
+    "typescript": "^4.8.3"
+  }
 }
